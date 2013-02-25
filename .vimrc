@@ -16,6 +16,7 @@ highlight ColorColumn ctermbg=Black
 
 nmap ; :
 nmap <SPACE> zz
+nmap <ENTER> o<ESC>
 
 set cursorline
 "quick-fix settings
