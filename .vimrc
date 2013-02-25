@@ -14,6 +14,10 @@ set textwidth=80
 set colorcolumn=+1
 highlight ColorColumn ctermbg=Black
 
+nmap ; :
+nmap <SPACE> zz
+
+set cursorline
 "quick-fix settings
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
