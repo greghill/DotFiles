@@ -15,6 +15,7 @@ set colorcolumn=+1
 highlight ColorColumn ctermbg=Black
 
 nmap ; :
+nmap : ;
 nmap <SPACE> zz
 nmap <ENTER> o<ESC>
 
