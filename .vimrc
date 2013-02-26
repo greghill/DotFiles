@@ -10,9 +10,9 @@ set showmatch
 set autoindent
 set smartindent
 set number
-set textwidth=80
-set colorcolumn=+1
-highlight ColorColumn ctermbg=Black
+"set textwidth=80
+"set colorcolumn=+1
+"highlight ColorColumn ctermbg=Black
 
 nmap ; :
 nmap <SPACE> zz
