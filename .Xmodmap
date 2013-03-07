@@ -1,3 +1,4 @@
+!! make this file and then call xmodmap thisfile
 !! No Caps Lock
 clear lock
 !! Switch Caps_lock and escape key.
