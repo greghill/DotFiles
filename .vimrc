@@ -16,7 +16,7 @@ set number
 
 nmap ; :
 nmap <SPACE> zz
-nmap <ENTER> o<ESC>
+"nmap <ENTER> o<ESC>
 
 set cursorline
 "quick-fix settings
