@@ -17,8 +17,8 @@ set number
 nmap ; :
 nmap <SPACE> zz
 "nmap <ENTER> o<ESC>
+"set cursorline
 
-set cursorline
 "quick-fix settings
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
