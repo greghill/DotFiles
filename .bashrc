@@ -108,7 +108,4 @@ fi
 
 # Custom PS1 prompt with current git branch aka bb cuccioli is pro
 GIT_PS1_SHOWDIRTYSTATE=true
-#source /etc/bash_completion.d/git
-#export GIT_PS1_SHOWDIRTYSTATE=true
-#export GIT_PS1_SHOWSTASHSTATE=true
-export PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]\[\033[00;34m\]$(__git_ps1 " [%s]")\[\e[1;32m\] \$\[\e[m\] \[\e[1;37m\]'
+export PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]\[\033[00;34m\]$(__git_ps1 " [%s]") \$\[\e[m\] '
