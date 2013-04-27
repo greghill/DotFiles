@@ -106,6 +106,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export LD_LIBRARY_PATH
+
 # Custom PS1 prompt with current git branch aka bb cuccioli is pro
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]\[\033[00;34m\]$(__git_ps1 " [%s]") \$\[\e[m\] '
