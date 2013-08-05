@@ -1,0 +1,17 @@
+[google]
+	ldapgroup = eng
+	ldapgroup = nonconf
+[user]
+	name = Greg Hill
+	email = greghill@google.com
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[alias]
+	cam = commit -am
+	cb = checkout -b
+	du = diff @{u}
+	k = log --graph --abbrev-commit --oneline --decorate
+	ka = log --graph --abbrev-commit --oneline --decorate --branches --tags --remotes
+	aa = log --graph --abbrev-commit --oneline --decorate --all
