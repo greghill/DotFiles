@@ -1,9 +1,6 @@
-[google]
-	ldapgroup = eng
-	ldapgroup = nonconf
 [user]
 	name = Greg Hill
-	email = greghill@google.com
+	email = gdh39@cornell.edu
 [merge]
 	tool = vimdiff
 [diff]
