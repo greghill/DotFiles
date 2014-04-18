@@ -6,6 +6,7 @@ set tabstop=4
 set ignorecase
 set hlsearch
 set showmatch
+syntax on
 
 set autoindent
 set smartindent
@@ -32,3 +33,4 @@ imap <right> <nop>
 "quick-fix settings
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+set clipboard=unnamedplus
