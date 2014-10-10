@@ -11,9 +11,7 @@ syntax on
 set autoindent
 set smartindent
 set number
-"set textwidth=80
-"set colorcolumn=+1
-"highlight ColorColumn ctermbg=Black
+match Error /\%81v.\+/
 
 nmap ; :
 nmap <SPACE> zz
