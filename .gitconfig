@@ -1,6 +1,6 @@
 [user]
 	name = Greg Hill
-	email = gdh39@cornell.edu
+	email = wazdee@gmail.com
 [merge]
 	tool = vimdiff
 [diff]
@@ -12,3 +12,5 @@
 	k = log --graph --abbrev-commit --oneline --decorate
 	ka = log --graph --abbrev-commit --oneline --decorate --branches --tags --remotes
 	aa = log --graph --abbrev-commit --oneline --decorate --all
+[push]
+	default = matching

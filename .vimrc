@@ -11,7 +11,9 @@ syntax on
 set autoindent
 set smartindent
 set number
-match Error /\%81v.\+/
+
+" highlight lines longer than 80 chars
+" match Error /\%81v.\+/
 
 nmap ; :
 nmap <SPACE> zz
