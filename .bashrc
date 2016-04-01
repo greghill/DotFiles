@@ -109,7 +109,7 @@ export LD_LIBRARY_PATH
 
 # Custom PS1 prompt with current git branch aka bb cuccioli is pro
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[\e[0;32m\]\u@\H\[\e[m\] \[\e[0;32m\]\w\[\e[m\]\[\033[00;33m\]$(__git_ps1 " [%s]") \$\[\e[m\] '
+export PS1='\[\e[0;32m\]\u@\H\[\e[m\] \[\e[0;32m\]\w\[\e[m\]\[\033[00;33m\]$(type -t __git_ps1 >& /dev/null && __git_ps1 " [%s]") \$\[\e[m\] '
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
