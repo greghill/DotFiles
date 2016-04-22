@@ -1,7 +1,0 @@
-!! make this file and then call xmodmap thisfile
-!! No Caps Lock
-clear lock
-!! Switch Caps_lock and escape key.
-keycode 0x42 = Escape
-keycode 9 = Caps_Lock
-add Lock = Caps_Lock
