@@ -1,4 +1,4 @@
-`cd ~; mv .bashrc .bashrc.old; git clone git@github.com:greghill/dotfiles.git && ln dotfiles/.* .`
+`cd ~; mv .bashrc .bashrc.old; git clone git@github.com:greghill/DotFiles.git && ln DotFiles/.* .`
 
 To map caps lock to escape add  
 `XKBOPTIONS="caps:escape"  `  
