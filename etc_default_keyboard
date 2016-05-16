@@ -1,0 +1,10 @@
+# KEYBOARD CONFIGURATION FILE
+# Changes caps lock to escape, layout is US
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="us"
+XKBVARIANT=""
+XKBOPTIONS="caps:escape"
+
+BACKSPACE="guess"
