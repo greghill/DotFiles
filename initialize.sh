@@ -1,9 +1,4 @@
 #! /bin/bash
-if [ "$EUID" -ne 0 ]
-    then echo "Please run as root"
-    exit
-fi
-
 cp /etc/default/keyboard ~/.etc_default_keyboard.old
 sudo cp etc_default_keyboard /etc/default/keyboard 
 
