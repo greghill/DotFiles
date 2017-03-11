@@ -1,4 +1,7 @@
 #! /bin/bash
+mkdir -p ~/.ssh
+cat greg_pubkey >> ~/.ssh/authorized_keys
+
 cp /etc/default/keyboard ~/.etc_default_keyboard.old
 sudo cp etc_default_keyboard /etc/default/keyboard 
 
