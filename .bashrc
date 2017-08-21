@@ -117,6 +117,7 @@ fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.local/bin" # haskell shit
+export PATH="$PATH:$HOME/.cabal/bin" # haskell shit
 export PATH="~/arcanist/arcanist/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
