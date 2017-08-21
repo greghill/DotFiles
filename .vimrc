@@ -15,6 +15,9 @@ set number
 " highlight lines longer than 80 chars
 " match Error /\%81v.\+/
 
+" highlight whitespace chars at end of line
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
 nmap ; :
 nmap <SPACE> zz
 "nmap <ENTER> o<ESC>
