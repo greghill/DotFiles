@@ -114,3 +114,10 @@ export PS1='\[\e[0;32m\]\u@\H\[\e[m\] \[\e[0;32m\]\w\[\e[m\]\[\033[00;33m\]$(typ
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.local/bin" # haskell shit
+export PATH="~/arcanist/arcanist/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
