@@ -1,8 +1,8 @@
 colo desert
 set expandtab
 set smarttab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set ignorecase
 set hlsearch
 set showmatch
@@ -13,7 +13,12 @@ set smartindent
 set number
 
 " highlight lines longer than 80 chars
-" match Error /\%81v.\+/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " highlight whitespace chars at end of line
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
