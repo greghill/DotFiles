@@ -23,6 +23,8 @@ autocmd BufWinLeave * call clearmatches()
 " highlight whitespace chars at end of line
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
+set tags=./tags,tags;$HOME/bllp-platform
+
 nmap ; :
 nmap <SPACE> zz
 "nmap <ENTER> o<ESC>
@@ -42,3 +44,4 @@ nmap <SPACE> zz
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 set clipboard=unnamedplus
+set autowrite
