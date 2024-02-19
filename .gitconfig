@@ -12,5 +12,13 @@
 	k = log --graph --abbrev-commit --oneline --decorate
 	ka = log --graph --abbrev-commit --oneline --decorate --branches --tags --remotes
 	aa = log --graph --abbrev-commit --oneline --decorate --all
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all -n 15
 [push]
 	default = simple
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = master
