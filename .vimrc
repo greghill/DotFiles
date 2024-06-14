@@ -45,3 +45,18 @@ autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 set clipboard=unnamedplus
 set autowrite
+
+" anything bigger than 4096 returning http 400
+let chat_engine_config = {
+\  "engine": "chat",
+\  "options": {
+\    "model": "gpt-4o",
+\    "endpoint_url": "https://api.openai.com/v1/chat/completions",
+\    "max_tokens": 4080,
+\    "request_timeout": 200,
+\    "selection_boundary": "",
+\  },
+\}
+
+let g:vim_ai_complete = chat_engine_config
+let g:vim_ai_edit = chat_engine_config
